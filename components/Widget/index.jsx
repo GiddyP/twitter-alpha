@@ -28,13 +28,13 @@ const index = ({ trendingResults, followResults }) => {
 
             <div className="text-[#d9d9d9] space-y-3 bg-[#15181c] pt-2 rounded-xl w-11/12 xl:w-9/12">
                 <h4 className="font-bold text-xl px-4">Who to follow</h4>
-                {followResults.map((result, index) => (
+                {followResults?.map((result, index) => (
                     <div
                         className="hover:bg-white hover:bg-opacity-[0.03] px-4 py-2 cursor-pointer transition duration-200 ease-out flex items-center"
                         key={index}
                     >
                         <Image
-                            src={result.userImg}
+                            src={result?.userImg}
                             width={50}
                             height={50}
                             objectFit="cover"
